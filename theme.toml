@@ -1,7 +1,7 @@
-name = "Anpu"
-description = "A port of the Hugo Anubis theme"
+name = "Mal's Theme"
+description = "A modification of the Hugo Anubis theme"
 license = "MIT"
-homepage = "https://github.com/zbrox/anpu-zola-theme"
+homepage = "https://github.com/malramsay64/mals-theme"
 # The minimum version of Zola required
 min_version = "0.11.0"
 # An optional live demo URL
