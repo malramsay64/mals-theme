@@ -14,6 +14,12 @@ demo = "https://anpu-zola-theme.netlify.app"
 [extra]
 menu_links = []
 
+# Enable the auto-render addon for KaTeX, 
+# which will automaticaly render any equations present in the text.
+# Enabling KaTeX is done on a page-by-page basis, by setting the [extra]
+# configuration on the page `latex = true`.
+katex_auto_render = true
+
 # The theme author info: you!
 [author]
 name = "Malcolm Ramsay"
