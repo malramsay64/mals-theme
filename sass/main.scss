@@ -143,16 +143,31 @@ kbd {
 }
 
 /* Styles */
+$blockquote-padding: 1em;
+$warning-colour: #FF5555;
 
 blockquote {
     border-left: 2px solid #cccccc;
-    padding: 0.1em 1em;
+    padding: 0em $blockquote-padding;
     margin-left: 0.75em;
 }
 
-blockquote.alert {
-    border-left: 2px solid rgb(255, 110, 110);
-    background: rgb(255, 220, 220);
+blockquote.warning {
+    border-left: 2px solid $warning-colour;
+
+    // Configure the Warning Message across top of blockquote
+    &::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f071  Warning";
+        font-weight: 900;
+        background: rgba($warning-colour, 0.2);
+        width: 100%;
+        display: inline-block;
+        margin-left: -$blockquote-padding;
+        padding-left: $blockquote-padding;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+    }
 }
 
 p {
