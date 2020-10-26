@@ -243,11 +243,19 @@ main h1 {
 
 article:not(:last-of-type) {
     border-bottom: thin solid #f1f1f1;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em
 }
 
 article header h1 {
     font-size: 1.35em;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+article header h2 {
+    font-size: 1.2em;
     line-height: 1.1em;
     margin-bottom: 0.5em;
     font-weight: 600;

@@ -25,17 +25,19 @@
 {% macro page_listing(page) %}
     <article class="post-list">
         <header> 
-            <h1>
+            <h2>
                 <a href="{{ page.permalink }}">{{ page.title }}</a>
-            </h1>
+            </h2>
         </header>
 
-        {% if page.summary %}
         <div class="content post-summary">
-            {{ page.summary | markdown | safe }}
+            {% if page.summary %}
+                {{ page.summary | markdown | safe }}
+            {% else %}
+                {{ page.content | safe | striptags | truncate(length=300) }}
+            {% endif %}
+            <a href="{{ page.permalink }}">read more</a>
         </div>
-        {% endif %}
-        
         {{ self::page_info(page=page) }}
     </article>
 {% endmacro page_listing %}
