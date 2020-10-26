@@ -150,6 +150,11 @@ blockquote {
     margin-left: 0.75em;
 }
 
+blockquote.alert {
+    border-left: 2px solid rgb(255, 110, 110);
+    background: rgb(255, 220, 220);
+}
+
 p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
