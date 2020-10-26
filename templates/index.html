@@ -38,6 +38,7 @@
         </header>
         <main id="main" tabindex="-1">
             {% block content %}
+                {{ section.content | safe }}
                 {% if paginator.pages %}
                 {% for page in paginator.pages %}
                     {{ page_macros::page_listing(page=page) }}
