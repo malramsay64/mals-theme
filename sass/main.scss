@@ -391,43 +391,37 @@ article img {
 
     &__newer,
     &__older {
-        flex: 1;
         margin-left: 6px;
         margin-right: 6px;
     }
 
-    &__newer {
-        text-align: right;
+    &__older {
         a {
+            justify-content: right;
+            text-align: right;
+            display: flex;
             // This draws the arrow for the next post
             &::after {
-                content: '';
-                display: inline-block;
-                position: relative;
-                top: -3px;
-                width: 6px;
-                height: 6px;
+                font-family: "Font Awesome 5 Free";
+                content: '\f101';
+                font-weight: 900;
                 margin-left: 6px;
-                border: solid currentColor;
-                border-width: 2px 2px 0 0;
-                transform: rotate(45deg);
+                display: flex;
+                align-items: center
             }
         }
     }
-    &__older {
+    &__newer {
         a {
+            display: flex;
             // This draws the arrow for the previous post
             &::before{
-                content: '';
-                display: inline-block;
-                position: relative;
-                top: -3px;
-                width: 6px;
-                height: 6px;
+                font-family: "Font Awesome 5 Free";
+                content: '\f100';
+                font-weight: 900;
                 margin-right: 6px;
-                border: solid currentColor;
-                border-width: 0 0 2px 2px;
-                transform: rotate(45deg);
+                display: flex;
+                align-items: center
             }
         }
     }
