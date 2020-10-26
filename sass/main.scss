@@ -533,3 +533,46 @@ ul.language-select > li {
     margin: auto;
     text-align: center;
 }
+
+/* Contact Shortcodes */
+div.contact {
+    display: flex;
+}
+
+a.contact {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    &::before {
+        font-size: 2em;
+        font-weight: 900;
+        padding-right: 0.5em;
+    }
+}
+a.twitter {
+    &::before {
+        font-family: "Font Awesome 5 Brands";
+        content: '\f081';
+    }
+}
+
+a.github {
+    &::before {
+        font-family: "Font Awesome 5 Brands";
+        content: '\f092';
+    }
+}
+
+a.linkedin {
+    &::before {
+        font-family: "Font Awesome 5 Brands";
+        content: '\f08c';
+    }
+}
+
+a.email {
+    &::before {
+        font-family: "Font Awesome 5 Free";
+        content: '\f199';
+    }
+}
