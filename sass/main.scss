@@ -384,39 +384,41 @@ article img {
     &__newer,
     &__older {
         flex: 1;
+        margin-left: 6px;
+        margin-right: 6px;
     }
 
     &__newer {
-        a {
-            // This draws the arrow for the next post
-            &::before {
-                content: '';
-                display: inline-block;
-                position: relative;
-                top: -1px;
-                width: 4px;
-                height: 4px;
-                margin-right: 4px;
-                border: solid currentColor;
-                border-width: 2px 0 0 2px;
-                transform: rotate(-45deg);
-            }
-        }
-    }
-    &__older {
         text-align: right;
         a {
-            // This draws the arrow for the previous post
+            // This draws the arrow for the next post
             &::after {
                 content: '';
                 display: inline-block;
                 position: relative;
-                top: -1px;
-                width: 4px;
-                height: 4px;
-                margin-left: 4px;
+                top: -3px;
+                width: 6px;
+                height: 6px;
+                margin-left: 6px;
                 border: solid currentColor;
                 border-width: 2px 2px 0 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    &__older {
+        a {
+            // This draws the arrow for the previous post
+            &::before{
+                content: '';
+                display: inline-block;
+                position: relative;
+                top: -3px;
+                width: 6px;
+                height: 6px;
+                margin-right: 6px;
+                border: solid currentColor;
+                border-width: 0 0 2px 2px;
                 transform: rotate(45deg);
             }
         }

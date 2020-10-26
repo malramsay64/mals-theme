@@ -29,14 +29,14 @@
 
 {% block post_navigation %}
     <nav class="post-pagination">
-        <div class="post-pagination__newer">
-            {% if page.later -%}
-                <a href="{{ page.later.permalink }}">{{ page.later.title }}</a>
-            {%- endif %}
-        </div>
         <div class="post-pagination__older">
             {% if page.earlier -%}
                 <a href="{{ page.earlier.permalink }}">{{ page.earlier.title }}</a>
+            {%- endif %}
+        </div>
+        <div class="post-pagination__newer">
+            {% if page.later -%}
+                <a href="{{ page.later.permalink }}">{{ page.later.title }}</a>
             {%- endif %}
         </div>
     </nav>
