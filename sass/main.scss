@@ -363,6 +363,42 @@ footer {
     font-size: 16px;
 }
 
+.footnote-definition {
+  font-size: 1rem;
+  margin: 1rem 0px;
+  padding-left: 40px;
+  position: relative;
+
+  &:nth-of-type(1) {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+
+    & > sup {
+      top: 1em;
+    }
+  }
+
+  & > sup {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 35px);
+    font-size: inherit;
+    line-height: inherit;
+    margin-right: 0px;
+    display: inline-block;
+
+    &:after {
+      content: ".";
+    }
+  }
+
+  & > p {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
 ul.language-select {
     padding-left: 0;
     list-style: none;
