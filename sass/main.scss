@@ -240,11 +240,13 @@ main h1 {
 
 /* Articles */
 
+article {
+    padding-bottom: 1em;
+    padding-top: 1em
+}
 
 article:not(:last-of-type) {
     border-bottom: thin solid #f1f1f1;
-    padding-bottom: 1em;
-    padding-top: 1em
 }
 
 article header h1 {
